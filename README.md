@@ -14,3 +14,5 @@ part of the array each recursive call considers.
 Analyse the time complexity of your implementation and give a $\Theta$ bound for
 its worst-case runtime. Add your answer, including your reasoning, to this
 markdown file.
+
+My merge function requires looping through the values, which adds the $$n^2$$ complexity to the code. But the original mergesort function does use for loops, which would then also add the logn complexity (which then uses the $$n^2$$ complexity for every iteration as well). This would then have a final complexity of $$O(logn*n^2)$$.
