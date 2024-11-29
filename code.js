@@ -12,7 +12,7 @@ function mergesort(array) {
 
 function merge(a, b, c, d) {
     let max = Math.max(a[c], a[d]) + 1;
-    let i = b, j = c + 1, k = l;
+    let i = b, j = c + 1, k = b;
     while (i <= d && j <= d && k <= d) {
         let val1 = a[i] % max;
         let val2 = a[j] % max;
