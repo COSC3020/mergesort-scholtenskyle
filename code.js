@@ -10,7 +10,7 @@ function mergesort(array) {
     return array;
 }
 
-function merge(a, b, c, d) {
+function merge(a, b, c, d){
     let max = Math.max(a[c], a[d]) + 1;
     let i = b, j = c + 1, k = b;
     while (i <= d && j <= d && k <= d) {
